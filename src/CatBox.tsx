@@ -35,6 +35,8 @@ function GiftButton({ index, setIndex, move, setMove }: { index: number; setInde
 
 function CatBox() {
   const images = [cat1, cat2, cat3];
+  const text_content = ["It's your birthday!", "nice try", "Mouehehe"];
+
 
   const [index, setIndex] = useState(0);
   const [move, setMove] = useState(false);
@@ -49,7 +51,7 @@ function CatBox() {
                 alt="animation"
                 className="w-64 h-64 object-contain rounded-lg"
             />
-                <h2>It's your birthday !!!</h2>
+                <h2 className="m-1.5 font-serif text-xl">{text_content[index]}</h2>
 
             <GiftButton
                 index={index}
