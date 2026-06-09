@@ -5,15 +5,15 @@ import cat1 from "./assets/cat_dance.gif";
 import cat2 from "./assets/cat_laugh_finger.gif";
 import cat3 from "./assets/cat_blue_laugh.gif";
 
-function GiftButton({ index, setIndex, move, setMove }) {
+function GiftButton({ index, setIndex, move, setMove }: { index: number; setIndex: (value: number | ((prev: number) => number)) => void; move: boolean; setMove: (value: boolean | ((prev: boolean) => boolean)) => void }) {
   const navigate = useNavigate();
 
   const imagesCount = 3;
 
   const handleClick = () => {
     if (index !== imagesCount - 1) {
-      setIndex((prev) => prev + 1);
-      setMove((prev) => !prev);
+      setIndex((prev: number) => prev + 1);
+      setMove((prev: boolean) => !prev);
     } else {
       navigate("/giftGuessing");
     }
