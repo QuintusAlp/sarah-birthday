@@ -1,12 +1,9 @@
 import { useState } from "react";
 
 const gifts = [
-  { name: "Bicycle", emoji: "🚲", hint: "You pedal it to get around town.", desc: "A classic ride for all ages!" },
-  { name: "Book", emoji: "📚", hint: "It takes you anywhere without leaving your chair.", desc: "A story waiting to be discovered." },
-  { name: "Headphones", emoji: "🎧", hint: "Slip it on and the world fades away.", desc: "Your own personal concert hall." },
-  { name: "Camera", emoji: "📷", hint: "It freezes a moment forever with a click.", desc: "Freeze memories forever." },
-  { name: "Board game", emoji: "🎲", hint: "Gather your family and let the rivalry begin.", desc: "Fun for the whole family." },
-  { name: "Telescope", emoji: "🔭", hint: "Point it at the sky and touch the stars.", desc: "Explore the universe from home." },
+  { name: "My love", emoji: "🫶​", hint: "You will need It for ever", desc: "hehe" },
+  { name: "rage Bait", emoji: "🫵​", hint: "mi mimimi mimi mi", desc: "hahaha" },
+  { name: "Creoles", emoji: "​💎​", hint: "You will be shiny with It. It's something you broke", desc: "slayyy" },
 ];
 
 export default function GiftGuessing() {
